@@ -1,1 +1,25 @@
+.box{
+    width:150px;
+    height:100px;
+    background-color:crimson;
+    margin:30px;
+}
+#rotate{
+    transform:rotate(360deg);
+}
 
+#scale{
+    transform:scale(0.01);
+}
+
+#skew{
+    transform:skew(50deg);
+}
+
+#translate{
+    /* translate(x,y)
+    * if you give positive values:display:
+    * move RIGHT then DOWN
+    */
+    transform:translate(10px,30px)
+}
