@@ -23,3 +23,45 @@
     */
     transform:translate(10px,30px)
 }
+
+/* Step 1: Define animation sequence */
+@keyframes colorchange{
+    from { background-color:aqua;}
+    to {background-color:blueviolet;}
+}
+
+/* Step 2: Configure animation */
+#animated-box{
+    animation-name:colorchange;
+    animation-duration:4s;
+    animation-iteration-count:infinite;
+}
+
+/* Improve animations by adding frames
+(points in the sequence) */
+
+@keyframes colorchangesmooth{
+    0% { background-color:aqua; }
+    50% { background-color:blueviolet; }
+    100% { background-color:aqua; }
+}
+#animated-emoji{
+    font-size:40px;
+    animation-name:emoji;
+    animation-duration:1s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+
+@keyframes emoji{
+    0% {
+        transform:rotate(0deg);
+    }
+    50% {
+        transform:rotate(180);
+        transform:translate(30px,30px)
+    }
+    100% {
+        transform:rotate(360deg)
+    }
+}
